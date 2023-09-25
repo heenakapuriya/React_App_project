@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "voucher_name":"Auguest Gift Voucher",
+        "discount":"10%",
+        "ticket_time":"AUGUEST23"
+    },
+    {
+        "id":2,
+        "voucher_name":"Winter Gift Voucher",
+        "discount":"15%",
+        "ticket_time":"WINTER23"
+    },
+    {
+        "id":3,
+        "voucher_name":"Summer Gift Voucher",
+        "discount":"12%",
+        "ticket_time":"SUMMER23"
+    },
+    {
+        "id":4,
+        "voucher_name":"January Gift Voucher",
+        "discount":"20%",
+        "ticket_time":"JANUARY23"
+    }
+]

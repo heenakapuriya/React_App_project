@@ -1,0 +1,40 @@
+.circle{
+    animation: 2s infinite animate;
+    transition: ease-in;
+}
+@keyframes animate{
+    0%{
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    30%{
+      
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 0.5;
+        
+    }
+    60%{
+        opacity:0.5;
+        
+    }
+    80%{
+        opacity:0.4;
+        
+    }
+    90%{
+        opacity:0.5;
+      
+    }
+    100%{
+        transform: scale(1.2);
+        opacity: 0.7;
+   
+    }
+}
+.shopbtn:hover{
+ background-color: black;
+ color: white;
+}

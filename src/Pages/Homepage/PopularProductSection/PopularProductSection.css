@@ -1,0 +1,86 @@
+.addtocart {
+    display: none;
+}
+
+.main-product-card:hover .addtocart {
+    display: block;
+
+}
+
+.main-product-card:hover .image-scale {
+    transform: scale(1.1);
+}
+
+.image-scale {
+    transition: 0.5s;
+}
+
+.three-icon {
+    display: none;
+}
+
+.main-product-card:hover .three-icon {
+    display: block;
+    z-index: 2;
+}
+
+.discount-div {
+    z-index: 5;
+}
+
+.sale-div {
+    z-index: 4;
+}
+
+.heart {
+    animation-duration: 0.4s;
+    animation-name: slideinheart;
+    transition: ease;
+}
+
+@keyframes slideinheart {
+    0% {
+        margin-left: 70%;
+    }
+    100% {
+        margin-left: 0%;
+    }
+}
+
+
+.eye {
+
+
+    animation-duration: 0.6s;
+    animation-name: slideineye;
+    transition: ease;
+}
+
+@keyframes slideineye {
+    0% {
+        margin-left: 70%;
+
+    }
+
+
+    100% {
+        margin-left: 0%;
+
+    }
+}
+
+
+.chain {
+    animation-duration: 0.8s;
+    animation-name: slideinchain;
+    transition: ease;
+}
+
+@keyframes slideinchain {
+    0% {
+        margin-left: 70%;
+    }
+    100% {
+        margin-left: 0%;
+    }
+}
