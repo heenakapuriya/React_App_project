@@ -16,22 +16,24 @@ const Homepage = () => {
   return (
     <>
       <Navbar />
+
       <Section1 />
+      
       <ProductCorousol />
+
       <div className='container-2xl h-auto mx-auto mt-36'>
-        <div className='flex-none sm:flex justify-between w-11/12 2xl:w-10/12 mx-auto'>
+        <div className='flex-none sm:flex justify-between w-10/12 2xl:w-10/12 mx-auto'>
           <div className=''>
             <h1 className='font-bold border-0 border-custom-pink border-l-4 text-4xl pl-5'>Popular Product</h1>
           </div>
           <div className='mt-7 sm:mt-0 group'>
-            <Link to='PopularProductCard_top' className='me-6 group-open:text-custom-pink'>Top Rated</Link>
+            <Link to='/' className='me-6 group-open:text-custom-pink'>Top Rated</Link>
             <Link to='PopularProductCard_best' className='me-6 group-open:text-custom-pink'>Best Selling</Link>
             <Link to='PopularProductCard_Latest' className='group-open:text-custom-pink'>Latest Product</Link>
           </div>
         </div>
         <Outlet />
       </div>
-
 
       <div className=' xs:px-0 md:px-32 mt-32  w-full  grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1  xs:grid-cols-1'>
         <div className=' w-full h-auto border-0 border-l-4 border-custom-pink   '>
@@ -57,6 +59,7 @@ const Homepage = () => {
       <div className='container-2xl  h-auto '>
         <Subscribe />
       </div>
+
       <Footer />
     </>
 

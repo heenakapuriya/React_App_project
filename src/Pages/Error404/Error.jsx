@@ -3,6 +3,7 @@ import errrimg from '../../../assets/error.svg'
 import Navbar from '../../Componants/Navbar'
 import Footer from '../../Componants/Footer/Footer'
 import Subscribe from '../Homepage/Subscribe_section/Subscribe'
+import { Link } from 'react-router-dom'
 
 const Error = () => {
     return (
@@ -15,7 +16,7 @@ const Error = () => {
                 <div className='w-full  text-center -mt-80'>
                     <h1 className='text-6xl font-bold '>Oops! Page not found</h1>
                     <p className='text-lg  pt-5 text-gray-400 text-center'>Whoops, this is embarassing. Looks like the page you<br /> were looking for was not found.</p>
-                    <div className='w-full h-auto mb-20'><button className=' back_to_home_btn px-7 py-3 bg-custom-pink hover:bg-black mt-10 font-semibold text-white text-lg'>Back To Home <i className=" ms-1 fa-solid fa-arrow-right"></i></button></div>
+                    <div className='w-full h-auto mb-20'><Link to="/"><button className=' back_to_home_btn px-7 py-3 bg-custom-pink hover:bg-black mt-10 font-semibold text-white text-lg'>Back To Home <i className=" ms-1 fa-solid fa-arrow-right"></i></button></Link ></div>
                 </div>
 
             </div>

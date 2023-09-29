@@ -30,9 +30,9 @@ const FAQ = () => {
           <img src={faqimg} className='bg-cover sm:w-full xs:w-full'></img>
         </div>
 
-        <div className='h-auto w-full  '>
+        <div className='h-auto w-full  border-0 border-b '>
           <ul class="flex  flex-wrap">
-            <Link to='GeneralQuestion' className=' hover:bg-custom-light-pink hover:text-custom-pink focus:bg-custom-light-pink focus:text-custom-pink'>
+            <Link to='' className=' hover:bg-custom-light-pink hover:text-custom-pink focus:bg-red-500 focus:border-b-custom-light-pink focus:text-custom-pink'>
               <li class="-mb-px">
                 <a class="  py-3 px-6  font-semibold text-lg flex" href="#"><span><img
                   src={generalimg}

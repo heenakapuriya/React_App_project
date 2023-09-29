@@ -9,6 +9,8 @@ import crossarrowicon from '../../../assets/crossarrow.svg'
 import aboutslide1 from '../../../assets/about-gallery-slider-1.jpg'
 import aboutslide2 from '../../../assets/about-gallery-slider-2.jpg'
 import aboutslide3 from '../../../assets/about-gallery-slider-3.jpg'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination,Scrollbar, A11y } from 'swiper/modules';
 
 import './AboutUs.css'
 
@@ -46,7 +48,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-            <div className='h-auto w-full   px-32 grid grid-cols-3 gap-5 justify-center '>
+            <div className='h-auto w-full mb-40  px-32 grid grid-cols-3 gap-5 justify-center '>
                 <div className='border mainhover border-gray-200 p-10 hover:shadow-2xl group'>
                     <div className='w-full  flex'>
                         <div className='w-1/2'><img src={listedicon} className='group-hover:-translate-y-5'></img></div>
@@ -87,8 +89,8 @@ const AboutUs = () => {
 
             <Swiper
                 // install Swiper modules
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
-                spaceBetween={20}
+                modules={[Navigation, Pagination , A11y]}
+                spaceBetween={500}
                 slidesPerView={3}
                 navigation
                 pagination={{ clickable: true }}
@@ -97,7 +99,7 @@ const AboutUs = () => {
                 onSlideChange={() => console.log('slide change')}
             >
                 <SwiperSlide>
-                    <div className='h-[500px] w-[600px]'><img src={aboutslide1} className='h-[500px] w-[600px]'></img></div>
+                    <div className='h-[500px] w-[600px]flex justify-center'><img src={aboutslide1} className='h-[500px] w-[600px]'></img></div>
                 </SwiperSlide>
                 <SwiperSlide> <div className='h-[500px] w-[600px]'><img src={aboutslide2} className='h-[500px] w-[600px]'></img></div></SwiperSlide>
                 <SwiperSlide> <div className='h-[500px] w-[600px]'><img src={aboutslide3} className='h-[500px] w-[600px]'></img></div></SwiperSlide>

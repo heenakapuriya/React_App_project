@@ -34,19 +34,19 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />}>
 
-          <Route path="PopularProductCard_top" element={<PopularProductCard_top />}>
+          <Route path="/" element={<PopularProductCard_top />}>
             <Route path="QuickView_eye" element={<Quickview_eyes />}></Route></Route>
 
           <Route path="PopularProductCard_best" element={<PopularProductCard_best />}>
             <Route path="QuickView_eye" element={<Quickview_eyes />}></Route></Route>
           <Route path="PopularProductCard_Latest" element={<PopularProductCard_Latest />}>
             <Route path="QuickView_eye" element={<Quickview_eyes />}></Route></Route>
-            </Route>
-      
+        </Route>
+
 
         <Route path="/Shop" element={<Shop />}></Route>
         <Route path="/FAQ" element={<FAQ />}>
-          <Route path="GeneralQuestion" element={<GeneralQuestion />}></Route>
+          <Route path="" element={<GeneralQuestion />}></Route>
           <Route path="Community" element={<Community />}></Route>
           <Route path="Support" element={<Support />}></Route>
         </Route>

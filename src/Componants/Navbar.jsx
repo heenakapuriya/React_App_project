@@ -80,10 +80,10 @@ const Navbar = () => {
                                                 <Link to='/MyWishlist' className="flex px-4 py-1 hover:text-custom-pink"><i className="dashicon mt-1 me-1 fa-solid fa-minus"></i>My WishList</Link>
                                             </li>
                                             <li className='drop-dash-li'>
-                                                <a href="#" className="flex px-4 py-1 hover:text-custom-pink"><i className="dashicon mt-1 me-1 fa-solid fa-minus"></i>CheckOut</a>
+                                                <Link to="/Checkout" className="flex px-4 py-1 hover:text-custom-pink"><i className="dashicon mt-1 me-1 fa-solid fa-minus"></i>CheckOut</Link>
                                             </li>
                                             <li className='drop-dash-li'>
-                                                <a href="#" className="flex px-4 py-1 hover:text-custom-pink"><i className="dashicon mt-1 me-1 fa-solid fa-minus"></i>Error 404</a>
+                                                <Link to="/Error" className="flex px-4 py-1 hover:text-custom-pink"><i className="dashicon mt-1 me-1 fa-solid fa-minus"></i>Error 404</Link>
                                             </li>
                                         </ul>
 
