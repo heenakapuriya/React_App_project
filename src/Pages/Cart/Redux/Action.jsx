@@ -1,4 +1,4 @@
-import { ADD_TO_CART, ADD_TO_WHISHLIST, DECRMENT_QUNTITY, INCRMENT_QUNTITY, REMOVE_TO_CART } from "./Constant";
+import { ADD_TO_CART, ADD_WISHLIST,REMOVE_WISHLIST, DECRMENT_QUNTITY, INCRMENT_QUNTITY, REMOVE_TO_CART } from "./Constant";
 
 export let addToCart = (data) => {
     return{
@@ -27,10 +27,16 @@ export let decrmentQuntity = (data) => {
         data
     }
 }
-
 export let addToWhishlist = (data) => {
-    return{
-        type: ADD_TO_WHISHLIST,
+    return {
+        type: ADD_WISHLIST,
         data
     }
 }
+export let removeToWishlist = (data) => {
+    return {
+        type: REMOVE_WISHLIST,
+        data
+    }
+}
+

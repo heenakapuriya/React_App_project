@@ -18,7 +18,7 @@ const Homepage = () => {
       <Navbar />
 
       <Section1 />
-      
+
       <ProductCorousol />
 
       <div className='container-2xl h-auto mx-auto mt-36'>
@@ -27,9 +27,9 @@ const Homepage = () => {
             <h1 className='font-bold border-0 border-custom-pink border-l-4 text-4xl pl-5'>Popular Product</h1>
           </div>
           <div className='mt-7 sm:mt-0 group'>
-            <Link to='/' className='me-6 group-open:text-custom-pink'>Top Rated</Link>
-            <Link to='PopularProductCard_best' className='me-6 group-open:text-custom-pink'>Best Selling</Link>
-            <Link to='PopularProductCard_Latest' className='group-open:text-custom-pink'>Latest Product</Link>
+            <Link to='/' className='me-6 hover:text-red-500 border-4 focus:border-b-red-500 group-open:text-custom-pink'>Top Rated</Link>
+            <Link to='PopularProductCard_best' className='me-6 hover:text-red-500 group-open:text-custom-pink'>Best Selling</Link>
+            <Link to='PopularProductCard_Latest' className='group-open:text-custom-pink hover:text-red-500'>Latest Product</Link>
           </div>
         </div>
         <Outlet />

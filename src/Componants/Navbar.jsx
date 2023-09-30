@@ -11,6 +11,7 @@ import { useSelector } from 'react-redux'
 
 const Navbar = () => {
     const result = useSelector((state) => state.cartData);
+    const wishdata = useSelector((state) => state.wishlistData)
     console.warn("data in header", result);
 
     return (
@@ -100,9 +101,10 @@ const Navbar = () => {
                     <div className='icons-last  h-20 w-full ms-auto flex items-center justify-end '>
                         <div className='w-96 flex '><input type="text" id="search-navbar" className="block w-full p-2 pl-2 shadow-sm text-sm text-gray-900  rounded-s-full bg-white focus:outline-none sm:hidden lg:block" placeholder="Search For Products.." /><span><div className=' justify-center h-10 w-8 flex items-center pe-1 bg-white rounded-e-full sm:hidden lg:block'><button><img src={searchicon} /></button></div></span></div>
                         <div className='h-8 w-8 ms-4 '>
-                            <a href='#'>   <img src={usericon} className=' z-3 relative ms-4 mt-1 h-7 w-7  '></img></a> <div className=' absolute h-5 w-5 bg-custom-pink outline outline-1 outline-white rounded-full z-2 top-5 right-36'></div></div>
+                            <a href='#'>   <img src={usericon} className=' z-3 relative ms-4 mt-1 h-7 w-7  '></img></a> </div>
                         <div className='h-8 w-8 ms-4 '>
-                            <a href='#'>   <img src={wishlisticon} className=' z-3 relative ms-4 mt-1 h-7 w-7 '></img></a> <div className=' absolute h-5 w-5 bg-custom-pink outline outline-1 outline-white rounded-full z-2 top-5 right-24'></div></div>
+                            <a href='#'>   <img src={wishlisticon} className=' z-3 relative ms-4 mt-1 h-7 w-7 '></img></a> <div className=' absolute h-5 w-5 bg-custom-pink outline outline-1 outline-white rounded-full z-2 top-5 right-24  text-white text-center font-semibold'>{wishdata.length}</div></div>
+
                         <div className='h-8 w-8 ms-4 '>
                             <button>     <img src={carticon} className=' z-3 relative ms-4 mt-1 h-7 w-7  '></img></button> <div className=' absolute h-5 w-5 bg-custom-pink outline outline-1 outline-white rounded-full z-2 top-5 right-11 text-white  font-mono text-xs pt-1  leading-tight text-center font-bold'>{result.length}</div></div>
 

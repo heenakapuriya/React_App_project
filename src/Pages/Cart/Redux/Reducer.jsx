@@ -1,5 +1,5 @@
 
-import { ADD_TO_CART, ADD_TO_WHISHLIST, DECRMENT_QUNTITY, INCRMENT_QUNTITY, REMOVE_TO_CART } from "./Constant"
+import { ADD_TO_CART, DECRMENT_QUNTITY, INCRMENT_QUNTITY, REMOVE_TO_CART } from "./Constant"
 
 
 let cartData = (data = [], action) => {
@@ -43,9 +43,6 @@ let cartData = (data = [], action) => {
                 }
             })
             return [...decrmentItem];
-
-        case ADD_TO_WHISHLIST:
-            return [action.data, ...data]
 
         default:
             return data

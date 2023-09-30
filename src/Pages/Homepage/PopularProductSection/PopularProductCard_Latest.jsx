@@ -18,7 +18,7 @@ const PopularProductCard_Latest = () => {
     return (
         <>
             <div className='container-2xl mx-auto'>
-                <div className='w-10/12 2xl:w-10/12 mx-auto'>
+                <div className='w-11/12 2xl:w-10/12 mx-auto'>
 
                     <div className='flex justify-center'>
                         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-20 xl:gap-16 2xl:gap-10 mt-10'>
@@ -40,7 +40,7 @@ const PopularProductCard_Latest = () => {
                                                 <img src={ele.image} alt='photo' className=' image-scale  bg-center h-full w-full z-20'></img>
                                             </div>
 
-                                            <button onClick={() => dispatch(addToCart(ele))}> <div className='addtocart h-11 w-full pt-3 bg-black text-white text-center font-semibold items-center justify-center absolute bottom-0 hover:bg-custom-pink duration-500 '><i className=" me-2 fa-solid fa-cart-plus duration-500"></i>Add To Cart</div></button>
+                                            <button onClick={() => dispatch(addToCart(ele))}> <div className='addtocart h-12 w-full pt-2 bg-black text-white text-center font-semibold items-center justify-center absolute bottom-0 hover:bg-custom-pink duration-500 '><i className=" me-2 fa-solid fa-cart-plus duration-500"></i>Add To Cart</div></button>
                                         </div>
 
                                         <div className='h-auto w-full '>
